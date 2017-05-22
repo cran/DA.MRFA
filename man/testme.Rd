@@ -4,7 +4,7 @@
 Function for test the full capabilites of \code{DA.MRFA} package
 }
 \description{
-testme is a function which includes all the functions included in the DA.MRFA package, and his purpose is to serve as a demonstration of the potential usage of the package functions.
+testme is a function which includes all the functions available in the DA.MRFA package, and his purpose is to serve as a demonstration of the potential usage of the package functions.
 }
 \usage{
 testme(example = FALSE)

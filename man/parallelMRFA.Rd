@@ -60,7 +60,7 @@ David Navarro-Gonzalez
 Urbano Lorenzo-Seva
 }
 \examples{
-## perform a Parallel Analysis using an example Database with only 30 random data sets and
+## perform a Parallel Analysis using an example Database with only 10 random data sets and
 ## using the 90th percentile of distribution of the random data
 parallelMRFA(IDAQ, Ndatsets=10, percent=90)
 

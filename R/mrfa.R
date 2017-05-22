@@ -121,28 +121,24 @@ mrfa<-function(SIGMA, dimensionality = 1, random = 10, conv1, conv2, display = T
     }
     cat('\n\n')
 
-    if (dimensionality==1){
+    #if (dimensionality==1){
       f2<-size(A)[1]
       f1<-size(A)[2]
-    }
-    else {
-      f1<-size(A)[1]
-      f2<-size(A)[2]
-    }
+    #}
+    #else {
+    #  f1<-size(A)[1]
+    #  f2<-size(A)[2]
+    #}
     cat('       ')
-    for (k in 1:f2){
+
+    for (k in 1:f1){
       cat(sprintf('   Factor %2.0f',k))
     }
     cat('\n')
-    for (i in 1:f1){
+    for (i in 1:f2){
       cat(sprintf("V% 3.0f",i))
-      if (f2==1){
-        cat(sprintf('     % 5.4f',A[i]))
-      }
-      else{
-        for (j in 1:f2){
-          cat(sprintf('     % 5.4f',A[i,j]))
-        }
+      for (j in 1:f1){
+        cat(sprintf('     % 5.4f',A[i,j]))
       }
       cat("\n")
     }
